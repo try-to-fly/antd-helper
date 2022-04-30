@@ -39,5 +39,5 @@ export const loadDrawer = (props: IOwnProps = {}) => {
   const render = loadComponendBase(DrawerWrapper);
   props.onCancel = render.cancel;
   props.onOk = render.success;
-  render(props);
+  return render(props);
 };
